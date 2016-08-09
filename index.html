@@ -1,1 +1,34 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javacsript</title>
+</head>
+<body>
+<script>
+
+var customer = {
+    name : "Genoj",
+    address1 : "11 stell lane",
+    city : "commack",
+    balance : 600.28,
+    deposit: function(amount) {
+      this.balance += amount;
+    },
+    withdraw : function (amount) {
+        this.balance -= amount;
+    }
+
+}
+document.write(customer.balance, "<br/>");
+customer.withdraw(50.23);
+customer.withdraw(50);
+document.write("hello" , customer.balance.toFixed(2));
+    customer.state = "NY";
+    for (var props in customer) {
+        document.write(props, "<br/>");
+    }
+</script>
+
+</body>
+</html>
